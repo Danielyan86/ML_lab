@@ -101,7 +101,7 @@ if __name__ == "__main__":
 
     # Predict on the test set
     y_pred = model.predict(X_test)
-
+    print(y_pred)
     # Evaluate the model
     mse = np.mean((y_test - y_pred) ** 2)
     print(f"Mean Squared Error on test set: {mse:.4f}")
